@@ -1,0 +1,11 @@
+emp_id,emp_name,age,gender,city
+101,Rahul Sharma,28.0,Male,Mumbai
+102,Anita Verma,32.0,Female,Delhi
+103,Suresh Kumar,45.0,Male,Chennai
+104,Neha Singh,,Female,Bangalore
+105,Amit Patel,29.0,Male,
+106,Priya Iyer,27.0,Female,Chennai
+101,Rahul Sharma,28.0,Male,Mumbai
+107,,34.0,Male,Pune
+108,Kavita Rao,,,Hyderabad
+109,Rohit Mehta,41.0,Male,Delhi

@@ -1,0 +1,16 @@
+emp_id,emp_name,age,gender,city
+101,Rahul Sharma,28,Male,Mumbai
+102, Anita Verma ,32,Female, Pune
+103,Amit Patil,26,Male,Nagpur
+104,Priya Desai,,Female,Ahmedabad
+105,Suresh Iyer,35,Male, Chennai
+106,Neha Kulkarni,27,Female,Nashik
+107, ,30,Male,Delhi
+108,Rohit Mehta,,Male,
+109,Sunita Rao,29,,Bengaluru
+110,Akash Singh, 34 ,Male, Jaipur
+101,Rahul Sharma,28,Male,Mumbai
+102, Anita Verma ,32,Female, Pune
+111,Meena Joshi,NULL,Female,Indore
+112,Vikas Kulkarni,31,Male,
+113,Anil Kumar, ,Male,Hyderabad
