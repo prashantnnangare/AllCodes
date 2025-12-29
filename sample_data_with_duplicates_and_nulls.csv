@@ -1,0 +1,11 @@
+emp_id,emp_name,age,gender,city
+101,John,30.0,Male,Delhi
+102,Alice,25.0,Female,Mumbai
+103,Bob,,Male,Bangalore
+101,John,30.0,Male,Delhi
+104,,28.0,Female,Chennai
+105,David,35.0,,Pune
+106,Eva,29.0,Female,
+102,Alice,25.0,Female,Mumbai
+107,Frank,,Male,Hyderabad
+108,Grace,32.0,Female,Kolkata

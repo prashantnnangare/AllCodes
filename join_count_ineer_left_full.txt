@@ -1,0 +1,228 @@
+
+Find this
+
+
+inner join count -> 
+left count ->  
+right count -> 
+full count -> 
+
+1>
+   left                  right
+| sid | name  |      | sid | marks | inner-2
+| --- | ----- |      | --- | ----- | left -2+1=3
+| 1   | Amit  |      | 1   | 85    | right-2+1=3
+| 2   | Rohit |      | 3   | 90    | full join-4
+| 3   | Meena |      | 4   | 70    |
+
+2>
+
+| cust_id | cust_name |
+| ------- | --------- |
+| 1       | Amit      |inner-3
+| 2       | Rohit     |left-3+2=5
+| 3       | Meena     |right-3+1=4
+| 4       | Suman     |full-3+2+1=6
+
+
+
+| order_id | cust_id | amount |
+| -------- | ------- | ------ |
+| 101      | 1       | 500    |
+| 102      | 1       | 700    |
+| 103      | 2       | 300    |
+| 104      | 5       | 900    |
+
+3>
+| emp_id | emp_name |
+| ------ | -------- |
+| 1      | Amit     |inner-3
+| 2      | Ravi     |left-3+3=6
+| 3      | Neha     |right-3+1=4
+| 4      | Karan    |full-3+3+1=7
+| 5      | Pooja    |
+
+| sal_id | emp_id | salary |
+| ------ | ------ | ------ |
+| 11     | 1      | 40000  |
+| 12     | 2      | 35000  |
+| 13     | 1      | 10000  |
+| 14     | 6      | 45000  |
+
+
+
+4>
+| pid | product_name |
+| --- | ------------ |
+| 10  | Laptop       |inner-2
+| 11  | Mouse        |left-2+1+1=4
+| 12  | Keyboard     |right-2+1=3
+| 13  | Monitor      |full-2+2+1=5
+
+
+| order_id | pid | qty |
+| -------- | --- | --- |
+| 501      | 10  | 2   |
+| 502      | 11  | 1   |
+| 503      | 15  | 3   |
+
+
+5>
+| student_id | name  |
+| ---------- | ----- |
+| 101        | Asha  |inner-3
+| 102        | Vivek |left-3+2=5
+| 103        | Sita  |right-3+1=4
+| 104        | Mohan |full-6
+| mark_id | student_id | score |
+| ------- | ---------- | ----- |
+| 1       | 101        | 89    |
+| 2       | 102        | 76    |
+| 3       | 105        | 83    |
+| 4       | 101        | 91    |
+
+
+6>
+c****************check shubham
+| branch_id | branch_name |
+| --------- | ----------- |
+| 1         | Mumbai      |inner-1*2+1*1=2+1=3
+| 2         | Pune        |left-1*1+(3)=4
+| 3         | Delhi       |right-1+(3)=4      full-9  //5
+   
+
+| emp_id | branch_id |
+| ------ | --------- |
+| 201    | 1         |
+| 202    | 4         |
+| 203    | 1         |
+| 204    | 3         |
+
+
+7>
+| branch_id | branch_name |
+| --------- | ----------- |inner-1*1+1*1=2
+| 1         | Mumbai      |left-2+2=4
+| 2         | Pune        |right-2+3=5
+| NULL      | Indore      |full-2+2+3=7
+| 3         | Delhi       |
+
+| emp_id | branch_id |
+| ------ | --------- |
+| 201    | 1         |
+| 202    | NULL      |
+| 203    | 4         |
+| 204    | 3         |
+| 205    | NULL      |
+
+****************************correct***************
+8>
+
+| branch_id | branch_name |
+| --------- | ----------- |
+| 1         | Mumbai      |
+| 2         | Pune        |inner-1*1+1*1+1*1=3
+| 3         | Delhi       |left=3+2=5
+| NULL      | Jaipur      |right=3+3=6
+| 5         | Indore      |full=3+2+3=8
+
+| emp_id | branch_id |
+| ------ | --------- |
+| 301    | 1         |
+| 302    | 3         |
+| 303    | NULL      |
+| 304    | 7         |
+| 305    | 5         |
+| 306    | NULL      |
+
+9>
+| dept_id | dept_name |
+| ------- | --------- |
+| 10      | HR        |inner=1+1+1+1=4
+| 11      | IT        |left=4+1=5
+| 12      | Sales     |right=4+3=7
+| 13      | Finance   |full=4+1+3=8
+| NULL    | Support   |
+
+| emp_id | dept_id |
+| ------ | ------- |
+| 401    | 10      |
+| 402    | 12      |
+| 403    | 14      |
+| 404    | 11      |
+| 405    | NULL    |
+| 406    | 13      |
+| 407    | NULL    |
+
+
+10>
+
+| stud_id | name |
+| ------- | ---- |inner=1+1=2
+| 1       | A    |left=2+3=5
+| 2       | B    |right=2+3=5
+| 3       | C    |full=2+3+3=8
+| 4       | D    |
+| NULL    | E    |
+
+| mark_id | stud_id |
+| ------- | ------- |
+| 501     | 1       |
+| 502     | NULL    |
+| 503     | 4       |
+| 504     | 6       |
+| 505     | NULL    |
+
+
+11>
+
+| prod_id | prod_name |
+| ------- | --------- |
+| 100     | Pen       |inner=2+1=3
+| 101     | Pencil    |left=3+2=5
+| 102     | Notebook  |right=3+2=5
+| NULL    | Eraser    |full=3+2+2=7
+
+| order_id | prod_id |
+| -------- | ------- |
+| 801      | 100     |
+| 802      | 102     |
+| 803      | 105     |
+| 804      | NULL    |
+| 805      | 100     |
+
+
+12>
+
+| cust_id | cust_name   |
+| ------- | ----------- |inner=1*2+2*2=6
+| 1       | A           |left=6+3=9
+| 2       | B           |right=6+3=9
+| 2       | B-duplicate |full=6+3+3=12
+| 3       | C           |
+| NULL    | Unknown     |
+| 5       | E           |
+
+
+| order_id | cust_id |
+| -------- | ------- |
+| 801      | 1       |
+| 802      | 1       |
+| 803      | 2       |
+| 804      | 2       |
+| 805      | 4       |
+| 806      | NULL    |
+| 807      | NULL    |
+
+
+13>
+1                 1    inner=9+2=11
+1                 2     left=11+2=13
+1                 3     right=11+3=14
+2                 1	full=11+2+3=16
+2                null
+null             4
+null             1
+           
+
+
